@@ -64,7 +64,7 @@ def update_breakfast(breakfast_id: int, breakfast: breakfast, db: Session = Depe
     return breakfast
 
 
-@router.delete("/{breakfast_id}")
+@router.delete("/breakfast/{breakfast_id}")
 def delete_breakfast(breakfast_id: int, db: Session = Depends(get_db)):
     breakfast_model = db.query(models.Breakfasts).filter(
         models.Breakfasts.id == breakfast_id).first()
