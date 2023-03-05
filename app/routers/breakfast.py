@@ -4,6 +4,7 @@ from app import models
 from app.database import engine, SessionLocal
 from sqlalchemy.orm import Session
 
+
 app = FastAPI()
 
 router = APIRouter()
