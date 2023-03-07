@@ -30,7 +30,7 @@ lunchs = []
 
 @router.get("/lunchs")
 async def get_lunchs(db: Session = Depends(get_db)):
-    return db.query(models.Dinners).all()
+    return db.query(models.Lunchs).all()
 
 
 @router.post("/lunchs")
